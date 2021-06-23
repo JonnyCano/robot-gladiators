@@ -1,6 +1,6 @@
 var playerName = window.prompt("What is your robot's name?");
 var playerHealth = 100;
-var playerAttack = 10;
+var playerAttack = 50;
 var playerMoney = 10;
 
 // You can also log multiple values at once like this
@@ -140,18 +140,18 @@ var shop = function() {
     switch (shopOptionPrompt) {
         case "REFILL":  // new case
         case "refill":
-            window.alert("Refilling player's health by 20 for 7 dollars.");
+            window.alert("Refilling player's health by 24 for 7 dollars.");
 
             // increase health and decrease money
-            playerHealth = playerHealth + 20;
+            playerHealth = playerHealth + 24;
             playerMoney = playerMoney - 7;
             break;
         case "UPGRADE":
         case "upgrade":
-            window.alert("Upgrading player's attack by 6 for 7 dollars.");
+            window.alert("Upgrading player's attack by 8 for 7 dollars.");
 
             // increase attack and decrease money
-            playerAttack = playerAttack + 6;
+            playerAttack = playerAttack + 8;
             playerMoney = playerMoney - 7;
             break;
         case "LEAVE":
